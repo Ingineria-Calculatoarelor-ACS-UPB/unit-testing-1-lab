@@ -42,10 +42,10 @@ class Store:
     def remove_product(self, product):
         self.products.remove(product)
 
-    # returns the first alphabetical product found that respect the constraint
+    # returns the first alphabetical product found that respects the constraint
     def get_the_most_expensive_product(self):
         return max(self.products, key=lambda product:product.price)
 
-    # returns the first alphabetical product found that respect the constraint
+    # returns the first alphabetical product found that respects the constraint
     def get_highest_quantity_products(self):
         return max(self.products, key=lambda product:product.quantity)
