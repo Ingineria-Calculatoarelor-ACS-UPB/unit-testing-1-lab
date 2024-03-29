@@ -9,12 +9,12 @@ Creating a unit test is as simple as creating a function beginning with 'test_' 
 
 
 def test_find_next_prime():
-    """Exercise 0a: Create a unit test with a simple assert statement for equality. """
+    """ Exercise 0a: Create a unit test with a simple assert statement for equality. """
     # TODO
 
 
 def test_find_next_prime():
-    """Exercise 0b: Create a unit test with a simple assert statement for inequality. """
+    """ Exercise 0b: Create a unit test with a simple assert statement for inequality. """
     # TODO
 
 
@@ -26,7 +26,7 @@ def test_find_next_prime():
 Sometimes it makes sense to group unit tests: for instance, you want to keep all unit tests for a function together.
 Tests can be grouped in a file, but also in a class.
 
-Unit tests in class can share fixture-like methods that are called everytime a method is called.
+Unit tests in class can share fixture-like methods that are called every time a method is called.
 More info on these so-called xunit-style setups: https://doc.pytest.org/en/latest/xunit_setup.html
 
 Run all tests in the class with: >>>pytest test_primes.py::TestIsPrime
@@ -51,7 +51,7 @@ class TestIsPrime(object):
         assert is_prime(0) is False
 
     def test_negative(self):
-        """ Exercise 2: Test that negative numbers result in False and adjust
+        """ Exercise 1c: Test that negative numbers result in False and adjust
         is_prime().
         """
         # TODO
@@ -75,13 +75,13 @@ def give_three():
 
 
 def test_float(give_three):
-    """ Use fixture give_three by specifying it as an argument. """
+    """ Exercise 2: Use fixture give_three by specifying it as an argument. """
     # TODO
 
 
 """Built-in fixtures.
 
-pytest also ships with some common fixtures so you don't have create these yourself.
+pytest also ships with some common fixtures so you don't have to create these yourself.
 
 https://docs.pytest.org/en/6.2.x/fixture.html
 """
