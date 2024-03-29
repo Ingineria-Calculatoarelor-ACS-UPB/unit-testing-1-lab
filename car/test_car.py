@@ -1,7 +1,7 @@
 import pytest
 from car import Car
 
-""" Exercise 0a: Write a fixture that returns an instance of car. """
+""" Exercise 0a: Write a fixture that returns a car instance. """
 
 # TODO
 
@@ -12,12 +12,10 @@ def test_car_accelerate(my_car):
 
 
 def test_car_brake(my_car):
-    """ Exercise 0c: Using just created the fixture test the brake method. Hint: break, then check. """
+    """ Exercise 0c: Using the just created fixture test the brake method. Hint: break, then check. """
     # TODO
 
-
-
-
+#--------------------------------------------------------------------------------------------------------------------
 
 speed_data = {45, 50, 75, 45}
 
@@ -44,9 +42,7 @@ def test_car_accelerate(speed, expected_speed):
 speed update after brake method is called. Hint: Look up! """
 # TODO
 
-
-
-
+#--------------------------------------------------------------------------------------------------------------------
 
 """ Exercise 2a: Mark this test to be skipped. """
 # TODO
@@ -56,10 +52,10 @@ def test_average_speed():
     assert car.average_speed() == 50
 
 
-""" Exercise 2b: Write a test and mark it as skippable if python version is less than 3.7 """
+""" Exercise 2b: Write a test and mark it as skippable if Python version is less than 3.7 """
 # TODO
 
 
-"""Exercise 2c: Write a test you expect to fail for any of the car methods and mark it accordingly (provide a reason 
-too)."""
+""" Exercise 2c: Write a test you expect to fail for any of the car methods and mark it accordingly (provide a reason 
+too). """
 # TODO
