@@ -1,20 +1,17 @@
 import pytest
 from primes import is_prime
 
-""" Example unit test.
-
+"""
 Creating a unit test is as simple as creating a function beginning with 'test_' that contains an assert.
-
 """
 
-
 def test_find_next_prime():
-    """ Exercise 0a: Create a unit test with a simple assert statement for equality. """
+    """ Exercise 0a: Create a unit test with a simple equality assert statement for is_prime or find_next_prime. """
     # TODO
 
 
 def test_find_next_prime():
-    """ Exercise 0b: Create a unit test with a simple assert statement for inequality. """
+    """ Exercise 0b: Create a unit test with a simple inequality assert statement for is_prime or find_next_prime. """
     # TODO
 
 
@@ -37,7 +34,7 @@ class TestIsPrime(object):
     """ Tests can be grouped in a class. """
 
     def test_prime(self):
-        """ Create a unit test as a method with at least 3 different assert statements. """
+        """ Create a unit test as a method with at least 3 different assert statements for primes. """
         # TODO
 
     def test_one(self):
@@ -51,8 +48,7 @@ class TestIsPrime(object):
         assert is_prime(0) is False
 
     def test_negative(self):
-        """ Exercise 1c: Test that negative numbers result in False and adjust
-        is_prime().
+        """ Exercise 1c: Test that negative numbers result is False and adjust is_prime().
         """
         # TODO
 
@@ -61,8 +57,7 @@ class TestIsPrime(object):
 
 Fixtures provide more and better features than the setup & teardown methods: https://doc.pytest.org/en/latest/fixture.html
 
-Define fixtures with the decorator @pytest.fixture. Scope fixtures by giving it arguments (e.g. pytest.fixture(
-'session')).
+Define fixtures with the decorator @pytest.fixture. Scope fixtures by giving it arguments (e.g. pytest.fixture('session')).
 
 Use a fixture by specifying it as an argument for your test function.
 """
@@ -75,7 +70,7 @@ def give_three():
 
 
 def test_float(give_three):
-    """ Exercise 2: Use fixture give_three by specifying it as an argument. """
+    """ Exercise 2: Use fixture give_three by specifying it as an argument for primes. """
     # TODO
 
 
