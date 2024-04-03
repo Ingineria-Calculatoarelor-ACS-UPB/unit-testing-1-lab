@@ -18,7 +18,9 @@ def test_car_brake(my_car):
 #--------------------------------------------------------------------------------------------------------------------
 
 speed_data = {45, 50, 75, 45}
-
+""" It's ok if it fails for some values. It proves the logic. The only valid expected speed after brake for the
+the initial speed of 50, is 45.
+"""
 @pytest.mark.parametrize("speed_brake", speed_data)
 def test_car_brake(speed_brake):
     car = Car(50)
@@ -38,13 +40,13 @@ def test_car_accelerate(speed, expected_speed):
     assert car.speed == expected_speed
 
 
-""" Exercise 1b: Write a parameterized test for brake that receives different speeds and checks the
-speed update after brake method is called. Hint: Look up! """
+""" Exercise 1b: Write a parameterized test for brake that receives a dataset with pairs of speed and expected_speed
+after break. Hint: Look up! """
 # TODO
 
 #--------------------------------------------------------------------------------------------------------------------
 
-""" Exercise 2a: Mark this test to be skipped. """
+""" Exercise 2a: Mark this test to be skipped. Provide a reason for the skip!"""
 # TODO
 def test_average_speed():
     car = Car(50)
